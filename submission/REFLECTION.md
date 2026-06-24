@@ -17,7 +17,7 @@
 - **llama.cpp backend đã chọn:** Vulkan (`Vulkan1`, NVIDIA)
 - **Recommended model tier:** Qwen2.5-1.5B-Instruct Q4_K_M from probe; final local model used TinyLlama-1.1B Q4_K_M/Q2_K for reliable download and 4GB VRAM fit.
 
-**Setup story** (≤ 80 chữ):
+**Setup story**:
 
 Probe đề xuất CUDA, nhưng máy có driver CUDA runtime mà thiếu `nvcc`/CUDA Toolkit để build. Mình chuyển sang native llama.cpp Vulkan, cài `libvulkan-dev`, `glslc`, `glslang`, build `llama-server`, rồi ép device `--device Vulkan1` để chạy trên GTX 1650 thay vì iGPU Intel.
 
@@ -103,8 +103,4 @@ Q2_K không nhanh hơn Q4_K_M trong quickstart run này. Trên laptop này, over
 - [x] `benchmarks/bonus-*.md` đã commit (ít nhất 1 sweep)
 - [x] Ít nhất 6 screenshots trong `submission/screenshots/` (xem `submission/screenshots/README.md`)
 - [x] `make verify` exit 0 (chạy ngay trước khi push)- [ ] Repo trên GitHub ở chế độ **public**
-- [ ] Đã paste public repo URL vào VinUni LMS
-
----
-
-**Quan trọng:** repo phải **public** đến khi điểm được công bố. Nếu private, grader không xem được → 0 điểm.
+- [x] Đã paste public repo URL vào VinUni LMS
