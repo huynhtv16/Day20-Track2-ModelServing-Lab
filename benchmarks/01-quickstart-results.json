@@ -1,0 +1,36 @@
+{
+  "primary": {
+    "label": "primary (Q4_K_M)",
+    "model_path": "models/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf",
+    "n_threads": 6,
+    "n_ctx": 2048,
+    "n_batch": 512,
+    "n_gpu_layers": 99,
+    "load_ms": 800.9,
+    "ttft_ms_p50": 50.7,
+    "ttft_ms_p95": 67.8,
+    "tpot_ms_p50": 8.1,
+    "tpot_ms_p95": 8.42,
+    "e2e_ms_p50": 297.0,
+    "e2e_ms_p95": 326.6,
+    "e2e_ms_p99": 333.9,
+    "decode_rate_tok_s": 123.4
+  },
+  "compare": {
+    "label": "compare (Q2_K)",
+    "model_path": "models/TheBloke/TinyLlama-1.1B-Chat-v1.0-GGUF/tinyllama-1.1b-chat-v1.0.Q2_K.gguf",
+    "n_threads": 6,
+    "n_ctx": 2048,
+    "n_batch": 512,
+    "n_gpu_layers": 99,
+    "load_ms": 223.1,
+    "ttft_ms_p50": 53.2,
+    "ttft_ms_p95": 226.1,
+    "tpot_ms_p50": 10.98,
+    "tpot_ms_p95": 11.59,
+    "e2e_ms_p50": 391.5,
+    "e2e_ms_p95": 566.4,
+    "e2e_ms_p99": 640.3,
+    "decode_rate_tok_s": 91.1
+  }
+}
